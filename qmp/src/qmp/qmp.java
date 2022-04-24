@@ -27,6 +27,10 @@ class Prenda{
 	 void agregarColorSecundario(Color color){
 		this.colorSecundario=color;
 	}
+	 
+	 public String queCategoriaEs(TipoPrenda tipoPrenda, TiposPrendaValidos prendasValidas) {
+		 return prendasValidas.NombreCategoriaSegun(tipoPrenda);
+	 }
 	
 }
 
@@ -74,7 +78,7 @@ class TiposPrendaValidos{
 		}
 		
 	 
-	 public String queCategoriaEs(TipoPrenda tipo) {
+	 public String NombreCategoriaSegun(TipoPrenda tipo) {
 			if((prendasParteSuperior.contains(tipo))) {
 				return "ParteSuperior";
 			}
